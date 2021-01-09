@@ -18,6 +18,7 @@ class Property:
     owner = 0
     space = None
 
+
     def __init__(self, name, values):
         self.name = name
         self.color = values["color"]
@@ -32,6 +33,7 @@ class Property:
         self.rentH = values["rentH"]
         self.house_cost = values["house_cost"]
         self.space = values["space"]
+
 
     def __str__(self):
         return f"{self.name} \n\rColor: {self.color}\n  Cost: {self.cost}\n  Base Rent: {self.rent0}\n  Rent with Monopoly: {self.rentM}\n  Rent with 1 house: {self.rent1}\n  Rent with 2 houses: {self.rent2}\n  Rent with 3 houses: {self.rent3}\n  Rent with 4 houses: {self.rent4}\n  Rent with a hotel: {self.rentH}\n  Cost of each house: {self.house_cost}\n  Cost of a hotel: {self.house_cost} with 4 houses"
